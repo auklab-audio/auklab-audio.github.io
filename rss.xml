@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>John Doe's RSS Feed</title>
+        <title>Audio at the Auklab's RSS Feed</title>
         <link>https://auklab-audio.github.io</link>
-        <description>Updates, publications, and blog posts about John Doe's work in science.</description>
+        <description>Updates, publications, and blog posts about Audio at the Auklab.</description>
         <language>en-us</language>
         <pubDate>Mon, 16 Dec 2024 14:29:45 +0000</pubDate>
-        <lastBuildDate>Mon, 02 Jun 2025 09:50:32 +0000</lastBuildDate>
+        <lastBuildDate>Mon, 02 Jun 2025 12:21:04 +0000</lastBuildDate>
         <docs>https://www.rssboard.org/rss-specification</docs>
         <generator>  </generator>
         <atom:link href="https://auklab-audio.github.iorss.xml" rel="self" type="application/rss+xml" />
