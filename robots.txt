@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /exclude.html
+
+Sitemap: https://johnmartinsson.org/sitemap.xml

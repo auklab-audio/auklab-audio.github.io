@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>John Doe's RSS Feed</title>
+        <link>https://localhost:8000</link>
+        <description>Updates, publications, and blog posts about John Doe's work in science.</description>
+        <language>en-us</language>
+        <pubDate>Mon, 16 Dec 2024 14:29:45 +0000</pubDate>
+        <lastBuildDate>Mon, 02 Jun 2025 09:25:20 +0000</lastBuildDate>
+        <docs>https://www.rssboard.org/rss-specification</docs>
+        <generator>  </generator>
+        <atom:link href="https://localhost:8000rss.xml" rel="self" type="application/rss+xml" />
+        
+        
+        <item>
+            <title>Efficient and Precise Sound Event Annotation</title>
+            <link>https://localhost:8000/blog/efficient-and-precise-sound-event-annotation</link>
+            <description>Annotating bioacoustic data is a time-consuming and labor-intensive task. We have therefore developed a method for efficient and precise annotation of local structures in data, which we call adaptive change point detection (A-CPD).</description>
+            <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
+            <guid isPermaLink="false">/blog/efficient-and-precise-sound-event-annotation</guid>
+        </item>
+        
+        
+        
+        <item>
+            <title>From Weak to Strong Sound Event Labels using Adaptive Change-Point Detection and Active Learning</title>
+            <link>https://localhost:8000/publications/2024/adaptive-change-point-detection</link>
+            <description>We propose an adaptive change point detection method (A-CPD) for machine guided weak label annotation of audio recording segments. The goal is to maximize the amount of information gained about the temporal activations of the target sounds. For each unlabeled audio recording, we use a prediction model to derive a probability curve used to guide annotation. The prediction model is initially pre-trained on available annotated sound event data with classes that are disjoint from the classes in the unlabeled dataset. The prediction model then gradually adapts to the annotations provided by the annotator in an active learning loop. We derive query segments to guide the weak label annotator towards strong labels, using change point detection on these probabilities. We show that it is possible to derive strong labels of high quality with a limited annotation budget, and show favorable results for A-CPD when compared to two baseline query segment strategies.  DOI: 10.23919/EUSIPCO63174.2024.10715098</description>
+            <pubDate>Mon, 02 Jun 2025 00:00:00 +0000</pubDate>
+            <guid isPermaLink="false">10.23919/EUSIPCO63174.2024.10715098</guid>
+        </item>
+        
+    </channel>
+</rss>
