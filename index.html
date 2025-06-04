@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Auklab Audio Research</title>
-<meta name="description" content="News and updates about the audio research at the Auklab">
+<meta name="description" content="News and updates about the continuous acoustic monitoring at the Auk Lab">
 
 <link rel="stylesheet" href="/styles.css">
 <link rel="alternate" type="application/rss+xml" title="Auklab Audio Research" href="/rss.xml">
@@ -13,7 +13,7 @@
 
 <!-- Open Graph Meta Tags -->
 <meta property="og:title" content="Auklab Audio Research">
-<meta property="og:description" content="News and updates about the audio research at the Auklab">
+<meta property="og:description" content="News and updates about the continuous acoustic monitoring at the Auk Lab">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://auklab-audio.github.io">
 <meta property="og:image" content="/images/banner_image.webp">
@@ -22,7 +22,7 @@
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Auklab Audio Research">
-<meta name="twitter:description" content="News and updates about the audio research at the Auklab">
+<meta name="twitter:description" content="News and updates about the continuous acoustic monitoring at the Auk Lab">
 <meta name="twitter:image" content="/images/banner_image.webp">
 </head>
 <body>
@@ -154,21 +154,150 @@
         <main>
             
 
+<!-- ========================================================= -->
+<!-- 1) Vision: why we’re “listening in”                       -->
+<!-- ========================================================= -->
 <section class="research_vision">
-    <h2>Audio Research at the Auklab</h2>
-    <p>
-        Focusing on the intersection of ecology, audio processing, and machine learning, the audio research at the Auklab is dedicated to advancing the understanding of Common Guillemot communication through audio analysis.
-    </p>
+  <h2>Why We’re Listening In at the Auk Lab</h2>
 
-    <ul>
-        <li>Recent publication: (<a href="/publications/2025/technological-evolution-at-auklab" target="_blank">Hentati-Sundberg et al., 2025</a>)</li>
-        <li>Parent project: <a href="http://www.balticseabird.com/auklab/">Baltic Seabird - Auklab</a></li>
-    </ul>
+  <p>
+    The Auk Lab on Stora Karlsö is a cliff-edge observatory where Common Guillemots
+    (<em>Uria aalge</em>) have been filmed, weighed and tracked for ten years&nbsp;(<a href="/publications/2025/technological-evolution-at-auklab" target="_blank">Hentati-Sundberg et al., 2025</a>).
+    Cameras and sensors have already revealed how storms, heat waves and even eagle fly-overs
+    shape breeding success. Guillemots never stop talking—courting partners, scolding neighbours,
+    or begging for fish. With a new, continuous eight-channel audio system as well as integrated microphones in ten of the IP cameras, we can now <em>hear</em> the colony as well as see it, opening an acoustic window into the life of the Guillemots.
+  </p>
 
-    <p>
-        Want to learn more? Explore my <a href="/blog" target="_blank">blog</a> or <a href="/publications" target="_blank">publications</a> for more insights.
-    </p>
+  <p>
+    The soundscapes fill gaps the cameras leave. A sudden roar warns of an approaching
+    eagle before the birds even flinch on screen, and synchronized sampling of the eight studio microphones may let us pinpoint which ledge a caller is standing on. Over the next seasons
+    we hope to match individual voices to the colour-ringed birds on camera,
+    turning every squawk into a data point.
+  </p>
+
+  <p>
+    The audio work is funded by XXX. The work done at the Auk Lab (now including audio) is part of the
+    <a href="http://www.balticseabird.com/auklab/">Baltic Seabird programme</a>.
+    Detailed methods and results after a decade of observations are in the 2025 progress report cited above.
+    For regular updates on the audio research done at the Auk Lab please visit our <a href="/blog" target="_blank">project blog</a>
+    or browse our <a href="/publications" target="_blank">publications</a>.
+  </p>
 </section>
+
+<!-- ========================================================= -->
+<!-- Auk Lab overview montage                                  -->
+<!-- ========================================================= -->
+<section class="figure_overview">
+  <figure>
+    <!-- Replace filename if you store the montage under a different name -->
+    <img loading="lazy"
+         src="/images/auklab.webp"
+         alt="Six-panel montage of the Auk Lab: exterior on the cliff, nest ledges with cameras, researchers ringing birds through a floor hatch, interior of Razorbill boxes, a colour-ringed Guillemot on a weighing platform, and night-vision AI footage outlining birds.">
+    <figcaption>
+      From top left:
+      <strong>(a)</strong>&nbsp;The Auk Lab clings to the limestone cliff on Stora Karlsö;  
+      <strong>(b)</strong>&nbsp;custom nesting shelves fitted with cameras and sliding hatches (now 15 ledges also have microphones);  
+      <strong>(c)</strong>&nbsp;researchers capture birds through one of the floor openings;  
+      <strong>(d)</strong>&nbsp;interior view of Razorbill (<em>Alca&nbsp;torda</em>) nest boxes;  
+      <strong>(e)</strong>&nbsp;a colour-ringed Common Guillemot stands on an automated scale;  
+      <strong>(f)</strong>&nbsp;infra-red footage at night with an AI model outlining adults and chicks. Image source: (<a href="/publications/2025/technological-evolution-at-auklab" target="_blank">Hentati-Sundberg et al., 2025</a>).
+    </figcaption>
+  </figure>
+</section>
+
+
+<!-- ========================================================= -->
+<!-- 3) What the audio layer adds                              -->
+<!-- ========================================================= -->
+<section class="why_audio">
+  <h3>Micing up the Guillemot Colony at Stora Karlsö</h3>
+
+In total we have installed audio at 15 ledges for this season. Eight high quality DPA microphones are mounted by the already existing IP cameras, and ten more low quality microphones are integrated into the cameras themselves. The reason these 18 microphones in total only cover 15 ledges is that we have overlap at three locations. This will let us compare the analysis possible with low quality vs. high quality audio, and it also acts as a fall back option for synchronization between the audio and video streams since the audio from the cameras is known to be synchronized to the video. The DPA microphones are connected to a Zoom F8 Pro field recorder and connected through USB to a Raspberry Pi that records the audio to a local USB drive (Recording Pi). The audio is then backed up to a NAS server by another Raspberry  (Analytics Pi), which also monitors the health of the system and provides a web interface for monitoring. All data streams are syncronized with a GPS-disciplined NTP server (Clock Pi). The system is designed to run autonomously for months, with minimal human intervention.
+
+  <!---- Image row -->
+  <div class="equipment_row">
+    <figure>
+      <img loading="lazy" src="/images/ntp_servers_inside.webp"
+           alt="Clock Pi: GPS-disciplined Stratum-1 NTP server">
+      <figcaption>Clock Pi: GPS-disciplined local NTP server, accurate to micro-seconds.</figcaption>
+    </figure>
+
+    <figure>
+      <img loading="lazy" src="/images/audio_recording_setup.webp"
+           alt="Zoom F8 Pro and Recording Pi inside the rack">
+      <figcaption>Recording Pi: Syncs time with NTP server, and records the Zoom F8 Pro audio to a local USB drive.</figcaption>
+    </figure>
+
+    <figure>
+      <img loading="lazy" src="/images/analytics_pi.webp"
+           alt="Analytics Pi inside the server rack">
+      <figcaption>Analytics Pi: Syncs time with NTP server, and backs up finished audio recordings to a NAS server.</figcaption>
+    </figure>
+    <figure>
+    <img loading="lazy" src="/images/camera_and_microphone.webp"
+         alt="Close-up of a DPA microphone next to an IP camera">
+    <figcaption>A DPA 4661 mic shares the perch with an existing IP camera.</figcaption>
+  </figure>
+  </div>
+
+  <!---- Flowing description -->
+  <p>
+    A GPS pulse per second feeds Clock Pi, turning it into a Stratum-1 NTP server.
+    Every few seconds the two downstream Pis ask it for the correct time, so audio,
+    video and sensor logs stay in sync. In addition to the Clock Pi, there is a backup Teltonika NTP0001 server that will take over if the Clock Pi fails.
+  </p>
+
+  <p>
+    Inside the Auk Lab the Recording Pi sits in a rack and records the eight Zoom channels into
+    10 minute long RF64 files on a USB drive. Fifty meters away in the
+    server room, the Analytics Pi watches the directory via SSHFS. When a file stops
+    growing it syncs the file to a NAS over NFS. The success of the transfer is verified by a checksum, and logged in a log file on the Analytics Pi. 
+    
+    All raspberries keep their own health check logs which are pooled by the Analytics Pi at certain intervals, and a daily summary is pushed to a webpage. The result is a chain of custody that runs for months without human intervention.
+  </p>
+  <div class="hero_gallery">
+    <figure>
+    <img loading="lazy" src="/images/system_overview.webp"
+         alt="Diagram of Clock Pi, Recording Pi and Analytics Pi">
+    <figcaption>The three-Pi backbone that records, timestamps, backs up, and verifies every file.</figcaption>
+    </figure>
+  </div>
+
+</section>
+
+<!-- ========================================================= -->
+<!-- 5) Looking ahead                                          -->
+<!-- ========================================================= -->
+<section class="history_future">
+  <h3>A Decade of Data, and We’re Just Warming Up</h3>
+
+  <p>
+    The 2025 report shows how automated scales, infrared cameras and RFID tags
+    have already changed what we know about seabird timing and survival.
+    With sound, behaviourists can also test
+    whether stressed colonies get noisier, whether parents announce fish sizes,
+    or whether mates recognise each other’s voices across seasons.
+  </p>
+
+  <p>
+    All recordings will feed open machine-learning models, making the Auk Lab
+    a genuinely multi-modal field station where every click and flutter is logged.
+  </p>
+</section>
+
+<!-- ========================================================= -->
+<!-- 6) Stay in the loop                                       -->
+<!-- ========================================================= -->
+<section class="call_to_action">
+  <h3>Follow the Project</h3>
+
+  <p>
+    We publish code, schematics and fresh observations on
+    <a href="https://github.com/Auklab-Audio" target="_blank">GitHub</a> and in the
+    project <a href="/blog" target="_blank">blog</a>. 
+  </p>
+</section>
+
             <!-- <div class="publications-list">
                 
             </div> -->
