@@ -162,7 +162,7 @@
 
   <p>
     The Auk Lab on Stora Karlsö is a cliff-edge observatory where Common Guillemots
-    (<em>Uria aalge</em>) have been filmed, weighed and tracked for ten years&nbsp;(<a href="/publications/2025/technological-evolution-at-auklab" target="_blank">Hentati-Sundberg et al., 2025</a>).
+    (<em>Uria aalge</em>) have been filmed, weighed and tracked for more than a decade years&nbsp;(<a href="/publications/2025/technological-evolution-at-auklab" target="_blank">Hentati-Sundberg et al., 2025</a>).
     Cameras and sensors have already revealed how storms, heat waves and even eagle fly-overs
     shape breeding success. Guillemots never stop talking—courting partners, scolding neighbours,
     or begging for fish. With a new, continuous eight-channel audio system as well as integrated microphones in ten of the IP cameras, we can now <em>hear</em> the colony as well as see it, opening an acoustic window into the life of the Guillemots.
@@ -212,7 +212,7 @@
 <section class="why_audio">
   <h3>Micing up the Guillemot Colony at Stora Karlsö</h3>
 
-In total we have installed audio at 15 ledges for this season. Eight high quality DPA microphones are mounted by the already existing IP cameras, and ten more low quality microphones are integrated into the cameras themselves. The reason these 18 microphones in total only cover 15 ledges is that we have overlap at three locations. This will let us compare the analysis possible with low quality vs. high quality audio, and it also acts as a fall back option for synchronization between the audio and video streams since the audio from the cameras is known to be synchronized to the video. The DPA microphones are connected to a Zoom F8 Pro field recorder and connected through USB to a Raspberry Pi that records the audio to a local USB drive (Recording Pi). The audio is then backed up to a NAS server by another Raspberry  (Analytics Pi), which also monitors the health of the system and provides a web interface for monitoring. All data streams are syncronized with a GPS-disciplined NTP server (Clock Pi). The system is designed to run autonomously for months, with minimal human intervention.
+In total we have 18 microphones (8 high-quality DPA, 10 camera integrated) covering 14 ledges. We have overlap at four ledges. This will let us compare the analysis possible with low quality vs. high quality audio, and it also acts as a fall back option for synchronization between the audio and video streams. The DPA microphones are connected to a Zoom F8 Pro field recorder and connected through USB to a Raspberry Pi that records the audio to a local USB drive (Recording Pi). The audio is then backed up to a NAS server by another Raspberry  (Analytics Pi), which also monitors the health of the system and provides a web interface for monitoring. All data streams are syncronized with a GPS-disciplined NTP server (Clock Pi). The system is designed to run autonomously for months, with minimal human intervention.
 
   <!---- Image row -->
   <div class="equipment_row">
@@ -319,7 +319,8 @@ In total we have installed audio at 15 ledges for this season. Eight high qualit
   <p>
     We publish code, schematics and fresh observations on
     <a href="https://github.com/Auklab-Audio" target="_blank">GitHub</a> and in the
-    project <a href="/blog" target="_blank">blog</a>. 
+    project <a href="/blog" target="_blank">blog</a>. Also, daily summaries of the audio recordings are available on the
+    <a href="https://johnmartinsson.github.io/akulab2025/" target="_blank">Auk Lab Audio summaries</a> (system deployed at 2025-04-29, summaries before this are not valid).
   </p>
 </section>
 
